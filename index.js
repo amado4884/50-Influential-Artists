@@ -325,14 +325,23 @@ Create a function called `getHTML()` that takes the parameter `data` and uses a 
 The function should console.log 50 chunks of HTML code that match the structure above. 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
-
-function getHTML(/* Code here */) {
-
-  /* Code here */
-
+const artistsElement = document.getElementById("artists-container");
+function getHTML(data) {
+  let response = "";
+  data.forEach(artist => {
+    response = response + `<div class="artist">
+    <div class="image">
+        <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/>
+    </div>
+    <div class = "name">
+       <a href="${artist.wikipedia}">${artist.name}</a>
+    </div>
+    <div class = "bio">${artist.bio}</div>`;
+  });
+  return response;
 }
-
-
+console.log(getHTML(artists));
+// artistsElement.innerHTML = getHTML(artists);
 /* STRETCH 3: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
 function randomize(/* Code here */) {

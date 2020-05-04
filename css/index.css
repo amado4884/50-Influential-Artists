@@ -167,6 +167,7 @@ section.artists-container {
   justify-content: space-evenly;
   align-items: flex-start;
   margin-top: 3rem;
+  max-width: 900px;
 }
 section.artists-container div.artist {
   text-align: center;
