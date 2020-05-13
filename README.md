@@ -25,10 +25,27 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. How would you describe preprocessing to someone new to CSS?
+
+  Preprocessing is a technique that uses a compiler to covert ccs-like code into vanilla css.
+  These languages (usually less, or sass) have built-in methods and tools that make css more 
+  intuitive but also much easier and faster to use.
+
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+  My favorite concept would have to be variables and mixins. I come from a backend background so
+  variables and functions feel comfortable to me.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+  A variable is simply a human-readable word that the computer uses to reference a chunk of memory.
+  It might help to think of it as like a placeholder.
+
 4. What is the purpose of using functions in code?
+
+  To avoid repeating code. When possible (and when it makes sense), its always good to refactor your code to use functions in place of repeated or similar code.
+
 5. What is a JSON data?
+  JSON (Javascript Object Notation) is an extremely useful and popular type of format that is used to transfer data. It makes it intuatively easy to understand (for the reader/programmer) but also easy for the computer to parse and understand.
 
 You may need to look up an answer but, you are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -40,23 +57,23 @@ Follow these steps to set up your project:
 
 #### Git Set up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your Team Lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add your Team Lead as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 
 #### Preprocessor Set up
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] In your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `body` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [x] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [x] In your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [x] Verify your  compiler is working correctly by changing the `background-color` on the `body` selector to `red` in your `index.less` file.
+* [x] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ### Task 2a:  Minimum Viable Product - PreProcessing
 
 #### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [x] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
@@ -72,16 +89,16 @@ _You will know everything is working properly when you see the styles enabled fo
 
 #### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
-* [ ] Add a viewport meta tag to the head of your index.html page
-* [ ] [Review the provided home desktop design file](design/Desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
-* [ ] Main Content Styles: Use the `main.less` file for styling
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `contact us` button styles.
-* [ ] Use at least 2 parameters to create your button
-* [ ] Create a hover state that changes the opacity of images to 80%
-* [ ] Use good coding practices including adding responsive breakpoints to your code with media queries
+* [x] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [x] Add a viewport meta tag to the head of your index.html page
+* [x] [Review the provided home desktop design file](design/Desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [x] Navigation Styles: Use the `navigation.less` file for styling.
+* [x] Main Content Styles: Use the `main.less` file for styling
+* [x] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [x] LESS Parametric Mixin: create a parametric mixin that is used to create the `contact us` button styles.
+* [x] Use at least 2 parameters to create your button
+* [x] Create a hover state that changes the opacity of images to 80%
+* [x] Use good coding practices including adding responsive breakpoints to your code with media queries
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
@@ -93,7 +110,7 @@ After finishing your required elements, you can push your work further. These go
 
 * [ ] Use JavaScript to programmatically create HTML elements in the console and copy them to display all 20 artists on the page
 * [ ] Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order.
-* [ ] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example)
+* [x] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example)
 * [ ] Add responsive breakpoints to your code by using media queries
 * [ ] Add CSS animations
 

@@ -1,0 +1,28 @@
+nav {
+  .flex();
+  ul {
+    .flex();
+    :last-child {
+      ::after {
+        content: "";
+      }
+    }
+    li {
+      ::after {
+        content: " | ";
+        font-weight: normal;
+      }
+      padding: 2rem 0 2rem 1rem;
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+      }
+      a.current-page {
+          
+        font-weight: bolder;
+      }
+    };
+  }
+}
